@@ -29,11 +29,6 @@
           });
      });
 
-     // offcanvas script from Bootstrap + added element to close menu on click in small viewport
-     $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
-          $('.offcanvas-collapse').toggleClass('open');
-     });
-
      // hover in desktop mode
      function toggleDropdown(e) {
           const _d = $(e.target).closest('.dropdown'),
@@ -98,40 +93,6 @@
           },
      });
 
-     /* Video Lightbox - Magnific Popup */
-     $('.popup-youtube, .popup-vimeo').magnificPopup({
-          disableOn: 0,
-          type: 'iframe',
-          mainClass: 'mfp-fade',
-          removalDelay: 160,
-          preloader: false,
-          fixedContentPos: false,
-          iframe: {
-               patterns: {
-                    youtube: {
-                         index: 'youtube.com/',
-                         id: function (url) {
-                              var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-                              if (!m || !m[1]) return null;
-                              return m[1];
-                         },
-                         src: 'https://www.youtube.com/embed/%id%?autoplay=1',
-                    },
-                    vimeo: {
-                         index: 'vimeo.com/',
-                         id: function (url) {
-                              var m = url.match(
-                                   /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/
-                              );
-                              if (!m || !m[5]) return null;
-                              return m[5];
-                         },
-                         src: 'https://player.vimeo.com/video/%id%?autoplay=1',
-                    },
-               },
-          },
-     });
-
      /* Image Slider - Swiper */
      var imageSlider = new Swiper('.image-slider', {
           autoplay: {
@@ -166,20 +127,6 @@
                     slidesPerView: 4,
                     spaceBetween: 30,
                },
-          },
-     });
-
-     /* Text Slider - Swiper */
-     var textSlider = new Swiper('.text-slider', {
-          autoplay: {
-               delay: 4000,
-               disableOnInteraction: false,
-          },
-          loop: true,
-          pagination: {
-               el: '.swiper-pagination',
-               type: 'bullets',
-               clickable: true,
           },
      });
 

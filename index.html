@@ -22,6 +22,7 @@
           <link href="css/swiper.css" rel="stylesheet" />
           <link href="css/magnific-popup.css" rel="stylesheet" />
           <link href="css/styles.css" rel="stylesheet" />
+          <link href="css/custom.css" rel="stylesheet" />
           <link
                rel="stylesheet"
                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -51,7 +52,7 @@
                     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                          <ul class="navbar-nav ml-auto">
                               <li class="nav-item">
-                                   <a class="nav-link page-scroll" href="#features"
+                                   <a class="nav-link page-scroll" href="#header"
                                         >Inicio <span class="sr-only">(current)</span></a
                                    >
                               </li>
@@ -59,7 +60,10 @@
                                    <a class="nav-link page-scroll" href="#details">Productos</a>
                               </li> -->
                               <li class="nav-item">
-                                   <a class="nav-link page-scroll" href="#about">Sobre mí</a>
+                                   <a class="nav-link page-scroll" href="#about-me">Sobre mí</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link page-scroll" href="#newsletter">Newsletter</a>
                               </li>
                               <li class="nav-item dropdown">
                                    <a
@@ -116,7 +120,7 @@
                <div class="container">
                     <div class="row">
                          <div class="col-lg-6">
-                              <div class="text-container">
+                              <div class="text-container bounce-in-left">
                                    <h1 class="h1-large">
                                         Lo mejor en
                                         <span id="js-rotating"
@@ -142,7 +146,7 @@
                          </div>
                          <!-- end of col -->
                          <div class="col-lg-6">
-                              <div class="image-container">
+                              <div class="image-container bounce-in-right">
                                    <img
                                         class="img-fluid"
                                         src="images/header-smartphone.png"
@@ -158,10 +162,9 @@
           </header>
           <!-- end of header -->
 
-          <!-- Download -->
           <div class="counter">
                <div class="container">
-                    <div class="row" style="justify-content: center; text-align: center;">
+                    <div class="row" style="justify-content: center; text-align: center">
                          <div class="col-xl-6">
                               <!-- Counter -->
                               <div id="counter">
@@ -191,6 +194,73 @@
                                    hermosa, no dudes en realizar tu pedido. ¡Estoy segura de que
                                    encontrarás algo que te va a encantar! Espero tu consulta.
                               </p>
+
+                              <!-- Customers -->
+                              <div class="slider-1">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-lg-12">
+                                                  <h4>Nuestras marcas</h4>
+                                                  <hr class="section-divider" />
+
+                                                  <!-- Image Slider -->
+                                                  <div class="slider-container">
+                                                       <div class="swiper-container image-slider">
+                                                            <div class="swiper-wrapper">
+                                                                 <div class="swiper-slide">
+                                                                      <img
+                                                                           class="img-fluid"
+                                                                           src="images/customer-logo-1.png"
+                                                                           alt="alternative" />
+                                                                 </div>
+                                                                 <div class="swiper-slide">
+                                                                      <img
+                                                                           class="img-fluid"
+                                                                           src="images/customer-logo-2.png"
+                                                                           alt="alternative" />
+                                                                 </div>
+                                                                 <div class="swiper-slide">
+                                                                      <img
+                                                                           class="img-fluid"
+                                                                           src="images/customer-logo-3.png"
+                                                                           alt="alternative" />
+                                                                 </div>
+                                                                 <div class="swiper-slide">
+                                                                      <img
+                                                                           class="img-fluid"
+                                                                           src="images/customer-logo-4.png"
+                                                                           alt="alternative" />
+                                                                 </div>
+                                                                 <div class="swiper-slide">
+                                                                      <img
+                                                                           class="img-fluid"
+                                                                           src="images/customer-logo-5.png"
+                                                                           alt="alternative" />
+                                                                 </div>
+                                                                 <div class="swiper-slide">
+                                                                      <img
+                                                                           class="img-fluid"
+                                                                           src="images/customer-logo-6.png"
+                                                                           alt="alternative" />
+                                                                 </div>
+                                                            </div>
+                                                            <!-- end of swiper-wrapper -->
+                                                       </div>
+                                                       <!-- end of swiper container -->
+                                                  </div>
+
+                                                  <hr class="section-divider" />
+                                                  <!-- end of slider-container -->
+                                                  <!-- end of image slider -->
+                                             </div>
+                                             <!-- end of col -->
+                                        </div>
+                                        <!-- end of row -->
+                                   </div>
+                                   <!-- end of container -->
+                              </div>
+                              <!-- end of slider-1 -->
+                              <!-- end of customers -->
                          </div>
                          <!-- end of col -->
                     </div>
@@ -202,7 +272,7 @@
           <!-- end of download -->
 
           <!-- More Apps -->
-          <div class="cards-2">
+          <div class="cards-2" id="about-me">
                <div class="container">
                     <div class="row">
                          <div class="col-lg-12">
@@ -286,7 +356,7 @@
           <!-- end of more apps -->
 
           <!-- Newsletter -->
-          <div class="form newsletter">
+          <div class="form newsletter" id="newsletter">
                <div class="container">
                     <div class="row">
                          <div class="col-lg-12">
@@ -296,7 +366,7 @@
                               </h2>
                          </div>
                          <!-- end of col -->
-                    </div> 
+                    </div>
                     <!-- end of row -->
                     <div class="row">
                          <div class="col-lg-12">
@@ -321,6 +391,7 @@
                                                   --bs-btn-padding-y: 0.25rem;
                                                   --bs-btn-padding-x: 0.5rem;
                                                   --bs-btn-font-size: 0.75rem;
+                                                  border-radius: 0 25px 25px 0;
                                              ">
                                              Notificarme
                                         </button>
@@ -344,26 +415,35 @@
           <div class="footer">
                <div class="container">
                     <div class="row">
-                         <div class="col-lg-12">
-                              <div class="social-container">
-                                   <span class="fa-stack">
-                                        <a href="#your-link">
-                                             <i class="fas fa-circle fa-stack-2x"></i>
-                                             <i class="fab fa-facebook-f fa-stack-1x"></i>
+                         <div class="col-lg-6">
+                              <div class="contact-footer">
+                                   <h6>Contacto</h6>
+                                   <span>
+                                        <i class="fas fa-map-pin"></i> Rosario, Santa Fe, Argentina
+                                   </span>
+                                   <br />
+                                   <span>
+                                        <i class="fas fa-envelope"></i> abaccesorios@gmail.com
+                                   </span>
+                              </div>
+                         </div>
+                         <div class="col-lg-6" style="color: white">
+                              <h6>Redes Sociales</h6>
+                              <div class="icons-footer">
+                                   <span>
+                                        <a href="https://www.instagram.com" target="_blank">
+                                             <i class="fab fa-instagram"></i>
                                         </a>
                                    </span>
-                                    <span class="fa-stack">
-                                        <a href="#your-link">
-                                             <i class="fas fa-circle fa-stack-2x"></i>
-                                             <i class="fab fa-instagram fa-stack-1x"></i>
+                                   <span>
+                                        <a href="https://www.facebook.com" target="_blank">
+                                             <i class="fab fa-facebook"></i>
                                         </a>
                                    </span>
                               </div>
-                              <!-- end of social-container -->
                          </div>
-                         <!-- end of col -->
+                         <!-- end of row -->
                     </div>
-                    <!-- end of row -->
                </div>
                <!-- end of container -->
           </div>
@@ -376,7 +456,11 @@
                     <div class="row">
                          <div class="col-lg-12">
                               <a class="text-decoration-none" href="#" target="_blank">
-                                <p class="p-small">Copyright © <span id="currentYear"></span> Todos los derechos reservados | Diseñado y desarrollado por SCHENONE.CODE</p>
+                                   <p class="p-small">
+                                        Copyright © <span id="currentYear"></span> Todos los
+                                        derechos reservados | Diseñado y desarrollado por
+                                        SCHENONE.CODE
+                                   </p>
                               </a>
                          </div>
                          <!-- end of col -->
@@ -387,6 +471,18 @@
           </div>
           <!-- end of copyright -->
           <!-- end of copyright -->
+
+          <span class="bounce-in-left">
+               <link
+                    rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+               <a
+                    href="https://web.whatsapp.com/send?phone=+5493415428419&text=Hola!%20Estuve%20viendo%20la%20pagina%20web%20AB%20Accesorios%20y%20me%20gustaria%20hacerte%20una%20consulta.%20Probando,%20Anna%20puta%20XD."
+                    class="float"
+                    target="_blank">
+                    <i class="fa fa-whatsapp my-float"></i>
+               </a>
+          </span>
 
           <!-- Scripts -->
           <script src="js/jquery.min.js"></script>
