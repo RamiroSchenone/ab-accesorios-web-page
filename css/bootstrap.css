@@ -2621,22 +2621,21 @@ fieldset:disabled a.btn {
 }
 
 .btn-success {
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  color: var(--color-secondary);
+  background-color: var(--color-terciary);
+  border-color: var(--color-terciary);
 }
 
 .btn-success:hover {
-  color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
+  color: var(--color-terciary);
+  background-color: var(--color-secondary);
+  border-color: var(--color-terciary);
 }
 
 .btn-success:focus, .btn-success.focus {
-  color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
-  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+  color: var(--color-secondary);
+  background-color: var(--color-terciary);
+  border-color: var(--color-terciary);
 }
 
 .btn-success.disabled, .btn-success:disabled {
