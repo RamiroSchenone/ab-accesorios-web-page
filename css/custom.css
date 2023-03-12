@@ -1,6 +1,6 @@
 body {
      overflow-x: hidden;
-     height: 100%;
+     height: 110%;
      min-height: 100%;
      position: relative;
 }
@@ -222,9 +222,14 @@ body {
      color: red;
 }
 
-
 .btn-success i::before {
      padding-right: 5px;
+}
+
+.footer-complete {
+     position: absolute;
+     width: 100%;
+     bottom: 0;
 }
 
 .slide-in-top {

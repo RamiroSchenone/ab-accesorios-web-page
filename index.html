@@ -56,53 +56,19 @@
                                         >Inicio <span class="sr-only">(current)</span></a
                                    >
                               </li>
-                              <!-- <li class="nav-item">
-                                   <a class="nav-link page-scroll" href="#details">Productos</a>
-                              </li> -->
+                              <li class="nav-item">
+                                   <a class="nav-link" href="catalogo.html">Catálogo</a>
+                              </li>
                               <li class="nav-item">
                                    <a class="nav-link page-scroll" href="#about-me">Sobre mí</a>
                               </li>
                               <li class="nav-item">
                                    <a class="nav-link page-scroll" href="#newsletter">Newsletter</a>
                               </li>
-                              <li class="nav-item dropdown">
-                                   <a
-                                        class="nav-link dropdown-toggle"
-                                        href="#"
-                                        id="dropdown01"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        >Productos</a
-                                   >
-                                   <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                        <a class="dropdown-item page-scroll" href="article.html"
-                                             >Bandoleras</a
-                                        >
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item page-scroll" href="terms.html"
-                                             >Bolsos</a
-                                        >
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item page-scroll" href="privacy.html"
-                                             >Billeteras</a
-                                        >
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item page-scroll" href="privacy.html"
-                                             >Carteras</a
-                                        >
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item page-scroll" href="privacy.html"
-                                             >Mochilas</a
-                                        >
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item page-scroll" href="privacy.html"
-                                             >Riñoneras</a
-                                        >
-                                   </div>
-                              </li>
                               <li class="nav-item">
-                                   <a class="nav-link" href="catalogo.html">¡Hace tu pedido!</a>
+                                   <span id="cart" class="nav-link">
+                                        <i class="fas fa-shopping-cart"></i>
+                                   </span>
                               </li>
                          </ul>
                     </div>
@@ -126,7 +92,9 @@
                                              riñoneras</span
                                         >
                                    </h1>
-                                   <p>Muestrate como eres, ahi esta tu magia</p>
+                                   <p class="font-weight-bolder">
+                                        Muestrate como eres, ahi esta tu magia
+                                   </p>
                                    <button
                                         type="button"
                                         class="btn btn-primary"
@@ -135,8 +103,7 @@
                                              --bs-btn-padding-x: 0.5rem;
                                              --bs-btn-font-size: 0.75rem;
                                         ">
-                                        <i href="#your-link" class="fas fa-shopping-bag"></i>Realiza
-                                        tu pedido
+                                        <i href="catalogo.html" class="fas fa-shopping-bag"></i>Nuestro catálogo
                                    </button>
                               </div>
 
@@ -170,19 +137,19 @@
                                         <div class="counter-value number-count" data-count="500">
                                              1
                                         </div>
-                                        <p class="counter-info">+ Ventas</p>
+                                        <p class="counter-info font-weight-bold">+ Ventas</p>
                                    </div>
                                    <div class="cell">
                                         <div class="counter-value number-count" data-count="300">
                                              1
                                         </div>
-                                        <p class="counter-info">+ Clientes</p>
+                                        <p class="counter-info font-weight-bold">+ Clientes</p>
                                    </div>
                                    <div class="cell">
                                         <div class="counter-value number-count" data-count="150">
                                              1
                                         </div>
-                                        <p class="counter-info">+ Complementos</p>
+                                        <p class="counter-info font-weight-bold">+ Complementos</p>
                                    </div>
                               </div>
                               <!-- end of counter -->
@@ -208,37 +175,43 @@
                                                                  <div class="swiper-slide">
                                                                       <img
                                                                            class="img-fluid"
-                                                                           src="images/customer-logo-1.png"
+                                                                           src="images/amayra-logo.png"
                                                                            alt="alternative" />
                                                                  </div>
                                                                  <div class="swiper-slide">
                                                                       <img
                                                                            class="img-fluid"
-                                                                           src="images/customer-logo-2.png"
+                                                                           src="images/barbara-logo.png"
                                                                            alt="alternative" />
                                                                  </div>
                                                                  <div class="swiper-slide">
                                                                       <img
                                                                            class="img-fluid"
-                                                                           src="images/customer-logo-3.png"
+                                                                           src="images/chimola-logo.png"
                                                                            alt="alternative" />
                                                                  </div>
                                                                  <div class="swiper-slide">
                                                                       <img
                                                                            class="img-fluid"
-                                                                           src="images/customer-logo-4.png"
+                                                                           src="images/lima-logo.png"
                                                                            alt="alternative" />
                                                                  </div>
                                                                  <div class="swiper-slide">
                                                                       <img
                                                                            class="img-fluid"
-                                                                           src="images/customer-logo-5.png"
+                                                                           src="images/pierre-cardin-logo.png"
                                                                            alt="alternative" />
                                                                  </div>
                                                                  <div class="swiper-slide">
                                                                       <img
                                                                            class="img-fluid"
-                                                                           src="images/customer-logo-6.png"
+                                                                           src="images/skora-logo.png"
+                                                                           alt="alternative" />
+                                                                 </div>
+                                                                 <div class="swiper-slide">
+                                                                      <img
+                                                                           class="img-fluid"
+                                                                           src="images/trendy-logo.png"
                                                                            alt="alternative" />
                                                                  </div>
                                                             </div>
@@ -429,12 +402,16 @@
                               <h6>Redes Sociales</h6>
                               <div class="icons-footer">
                                    <span>
-                                        <a href="https://www.instagram.com" target="_blank">
+                                        <a
+                                             href="https://www.instagram.com/accesoriosab_arg/"
+                                             target="_blank">
                                              <i class="fab fa-instagram"></i>
                                         </a>
                                    </span>
                                    <span>
-                                        <a href="https://www.facebook.com" target="_blank">
+                                        <a
+                                             href="https://www.facebook.com/people/Accesorios-AB/100063771624170/?mibextid=LQQJ4d"
+                                             target="_blank">
                                              <i class="fab fa-facebook"></i>
                                         </a>
                                    </span>
@@ -495,9 +472,7 @@
           <!-- Magnific Popup for lightboxes -->
           <script src="js/morphext.min.js"></script>
 
-          
           <!-- Custom scripts -->
           <script src="js/scripts.js"></script>
-          <script type="module" src="js/products.js"></script>
      </body>
 </html>
