@@ -3,14 +3,14 @@ import { onGetProducts } from './connectionDB.js';
 window.addEventListener('DOMContentLoaded', async (e) => {
     const productsContainer = document.getElementById('products-container');
     const messageNotFound = document.getElementById('message-not-found');
-    
+
     if (localStorage.getItem('currentProducts') == null) {
         localStorage.setItem('currentProducts', JSON.stringify([]));
     }
 
     const querySnapshot = await onGetProducts();
 
-    if(querySnapshot.size == 0){
+    if (querySnapshot.size == 0) {
         clearLocalStorage();
         messageNotFound.innerHTML = 'Actualmente no hay artículos disponibles.';
         return;
