@@ -1,4 +1,4 @@
-function setProductsInLocalStorage(product) {
+function setProductInLocalStorage(product) {
     var currentProducts = getProductsInLocalStorage();
     var productExist = currentProducts.find(x => x.id === product.id);
 
@@ -7,6 +7,15 @@ function setProductsInLocalStorage(product) {
     }
 
     localStorage.setItem('currentProducts', JSON.stringify(currentProducts));
+}
+
+function setProductsInLocalStorage(productsList) {
+    localStorage.setItem('currentProducts', JSON.stringify([]));
+    if (productsList.length > 0) {
+        productsList.forEach(product => {
+            setProductInLocalStorage(product);
+        });
+    }
 }
 
 function setProductInCart(product) {

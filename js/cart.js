@@ -24,9 +24,11 @@ function addToCart(event) {
         hidden(spinnerCartProduct);
         show(addToCartButton);
         verifyCartNotification();
+        product.productInCart = true;
+        setProductInCart(product);
+        updateProduct(product);
     }, 1500);
-
-    setProductInCart(product);
+    
 }
 
 function getProductsToCart() {
@@ -84,12 +86,10 @@ function verifyCartNotification() {
     }
 }
 
-function showNotification() {
-    var options = {
-        animation: true,
-        delay: 2000
-    }
-    const liveToast = document.getElementById('live-toast');
-    var toastElement = new bootstrap.Toast(liveToast, options);
-    toastElement.show();
+function updateProduct(product) {
+    var products = getProductsInLocalStorage();
+    var newProducts = products.filter(x => x.id != product.id);
+    newProducts.push(product);
+    setProductsInLocalStorage([]);
+    setProductsInLocalStorage(newProducts);
 }
