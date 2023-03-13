@@ -36,6 +36,7 @@
      </head>
      <body data-spy="scroll" data-target=".fixed-top">
           <!-- Navigation -->
+
           <nav class="navbar navbar-expand-lg fixed-top navbar-light">
                <div class="container">
                     <!-- Text Logo - Use this if you don't have a graphic logo -->
@@ -76,10 +77,13 @@
                               <li class="nav-item">
                                    <a
                                         data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal"
+                                        data-bs-target="#modalCart"
                                         id="cart"
+                                        onclick="getProductsToCart()"
                                         class="nav-link">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-shopping-cart">
+                                             <span id="cart-notification">1</span>
+                                        </i>
                                    </a>
                               </li>
                          </ul>
@@ -94,29 +98,28 @@
           <!-- Modal -->
           <div
                class="modal slide-in-right"
-               id="exampleModal"
+               id="modalCart"
                tabindex="-1"
                aria-labelledby="exampleModalLabel"
                aria-hidden="true">
                <div class="modal-dialog">
                     <div class="modal-content">
                          <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
                               <button
                                    type="button"
                                    class="btn-close"
                                    data-bs-dismiss="modal"
                                    aria-label="Close"></button>
                          </div>
-                         <div class="modal-body">...</div>
+                         <div class="modal-body">
+                              <div id="current-cart"></div>
+                              <div class="text-center fw-bold" id="current-cart-not-found"></div>
+                         </div>
                          <div class="modal-footer">
-                              <button
-                                   type="button"
-                                   class="btn btn-secondary"
-                                   data-bs-dismiss="modal">
-                                   Close
+                              <button type="button" style="width: 100%" class="btn btn-success">
+                                   Confirmar pedido
                               </button>
-                              <button type="button" class="btn btn-success">Save changes</button>
                          </div>
                     </div>
                </div>
@@ -128,7 +131,7 @@
                     <h2 class="h2-heading">Catálogo</h2>
                </div>
                <div id="products-container"></div>
-               <div class="text-center font-weight-bold" id="message-not-found"></div>
+               <div class="text-center fw-bold" id="message-not-found"></div>
           </div>
 
           <div class="footer-complete">
@@ -228,6 +231,7 @@
           <script src="js/morphext.min.js"></script>
 
           <!-- Custom scripts -->
+          <script src="js/spinner.js"></script>
           <script src="js/scripts.js"></script>
           <script src="js/local-storage.js"></script>
           <script src="js/cart.js"></script>

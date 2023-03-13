@@ -236,24 +236,8 @@ body {
      justify-content: right;
 }
 
-.btn-primary,
-.btn-success {
-     color: var(--color-secondary);
-     background-color: var(--color-terciary);
-     border-color: var(--color-terciary);
-}
-
 .btn-primary a:hover {
      text-decoration: none;
-}
-
-.btn-primary:hover,
-.btn-success:hover,
-.btn-primary:focus,
-.btn-success:focus {
-     background-color: var(--color-secondary);
-     color: var(--color-terciary);
-     border-color: var(--color-terciary);
 }
 
 .navbar {
@@ -289,9 +273,67 @@ body {
      height: 98.8%;
 }
 
-body.modal-open,
-body.modal-open .navbar{
-     padding-right: 3px !important;
+.spinner-button {
+     width: 160px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 35px;
+     cursor: auto;
+     pointer-events: none;
+}
+
+.show {
+     visibility: visible;
+     opacity: 1;
+}
+
+.hidden {
+     visibility: hidden;
+     opacity: 0;
+}
+
+.btn-success,
+.btn-primary {
+     background-color: var(--color-terciary);
+     color: var(--color-secondary);
+     border-color: var(--color-terciary);
+}
+
+.btn-success:disabled,
+.btn-primary:disabled {
+     background-color: var(--color-terciary);
+     color: var(--color-secondary);
+     border-color: var(--color-terciary);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-primary:hover,
+.btn-primary:focus {
+     background-color: var(--color-secondary);
+     color: var(--color-terciary);
+     border-color: var(--color-terciary);
+}
+
+.fa-shopping-cart {
+     position: relative;
+}
+
+.cart-notification {
+     position: absolute;
+     top: -5px;
+     right: -5px;
+     width: 13px;
+     height: 13px;
+     border-radius: 50%;
+     background-color: var(--color-terciary);
+     color: white;
+     font-size: 10px;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
 .slide-in-top {
